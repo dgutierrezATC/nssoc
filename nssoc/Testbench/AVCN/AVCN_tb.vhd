@@ -67,7 +67,7 @@ ARCHITECTURE Behavioral OF AVCN_tb IS
     -------------------------------------------------------------------------------
     COMPONENT AVCN IS
         GENERIC (
-            NUM_FREQ_CH : INTEGER := 36
+            NUM_FREQ_CH : INTEGER := 64
         );
         PORT (
             i_clock                 : IN  std_logic;
