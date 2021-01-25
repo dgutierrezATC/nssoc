@@ -9,7 +9,7 @@ z2
 cModel Technology
 dD:/Universidad/Repositorios/GitHub/Doctorado/TDE_vhdl/TDE/Testbench/Results/Project
 Eavcn
-Z0 w1610625842
+Z0 w1610980840
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z3 dD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/Project
@@ -21,9 +21,9 @@ VVA=YdH^L9mMb6@J_<hHc=3
 !s100 ZO5YjNP`lVkEQ971fz?_e3
 Z6 OV;C;10.5c;63
 32
-Z7 !s110 1610709490
+Z7 !s110 1611428813
 !i10b 1
-Z8 !s108 1610709490.000000
+Z8 !s108 1611428813.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/AVCN.vhd|
 Z10 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/AVCN.vhd|
 !i113 1
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Eavcn_tb
-Z13 w1610663724
+Z13 w1611326633
 Z14 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
@@ -64,11 +64,11 @@ Vfn@JMeY0j@YVk=f378HF]0
 !s100 `X@l62UF`3`7=kabKi0If3
 R6
 32
-Z20 !s110 1610709491
+R7
 !i10b 1
-Z21 !s108 1610709491.000000
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/AVCN_tb.vhd|
-Z23 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/AVCN_tb.vhd|
+R8
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/AVCN_tb.vhd|
+Z21 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/AVCN_tb.vhd|
 !i113 1
 R11
 R12
@@ -79,39 +79,489 @@ R16
 R17
 R1
 R2
-Z24 DEx4 work 7 avcn_tb 0 22 fn@JMeY0j@YVk=f378HF]0
+DEx4 work 7 avcn_tb 0 22 fn@JMeY0j@YVk=f378HF]0
 l145
 L63
-Z25 VGleLRFSeUM:<FeE@TP5MI0
-Z26 !s100 Gc_j7<@LU6=]KGM5R9fhK1
+V7:leBAl8mC6V:JFkG[m3f1
+!s100 GcRAZ6B9bYXKlFG<QBi8z0
 R6
 32
-R20
+R7
 !i10b 1
+R8
+R20
 R21
-R22
-R23
+!i113 1
+R11
+R12
+Ecoincidence_detector_neuron
+Z22 w1611333725
+R17
+R16
+R15
+R1
+R2
+R3
+Z23 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/coincidence_detector_neuron.vhd
+Z24 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/coincidence_detector_neuron.vhd
+l0
+L55
+VKiFLhU92cMF2A@UlNzfd51
+!s100 E6aenzNBGISMJnPeHeGa:3
+R6
+32
+R7
+!i10b 1
+R8
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/coincidence_detector_neuron.vhd|
+Z26 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/coincidence_detector_neuron.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R17
+R16
+R15
+R1
+R2
+DEx4 work 27 coincidence_detector_neuron 0 22 KiFLhU92cMF2A@UlNzfd51
+l105
+L72
+V5n0QXWnhdMEAo3YMCdk;30
+!s100 kY^z1?W=aYA]>^NA3Y?_02
+R6
+32
+R7
+!i10b 1
+R8
+R25
+R26
+!i113 1
+R11
+R12
+Ecoincidence_detector_neuron_array
+Z27 w1611340860
+R15
+R1
+R2
+R3
+Z28 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/coincidence_detector_neuron_array.vhd
+Z29 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/coincidence_detector_neuron_array.vhd
+l0
+L53
+VIH4V2TM5NeokClz3m5b3F3
+!s100 :Y^]`C<mEMm[b@>=zdG@c1
+R6
+32
+R7
+!i10b 1
+R8
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/coincidence_detector_neuron_array.vhd|
+Z31 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/coincidence_detector_neuron_array.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R15
+R1
+R2
+DEx4 work 33 coincidence_detector_neuron_array 0 22 IH4V2TM5NeokClz3m5b3F3
+l104
+L72
+VBecLHmOBV9B;[fdLi1:g>3
+!s100 =hFeD2EX4UiHEOaJQ2?gG0
+R6
+32
+R7
+!i10b 1
+R8
+R30
+R31
+!i113 1
+R11
+R12
+Ecoincidence_detector_neuron_array_tb
+Z32 w1611357474
+R14
+R17
+R16
+R15
+R1
+R2
+R3
+Z33 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/coincidence_detector_neuron_array_tb.vhd
+Z34 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/coincidence_detector_neuron_array_tb.vhd
+l0
+L57
+VH0i0zkZ@PZ_NVV2R<0DZ93
+!s100 WIEbKoKSi<o>]`NgbFX6P2
+R6
+32
+R7
+!i10b 1
+R8
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/coincidence_detector_neuron_array_tb.vhd|
+Z36 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/coincidence_detector_neuron_array_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R17
+R16
+R15
+R1
+R2
+DEx4 work 36 coincidence_detector_neuron_array_tb 0 22 H0i0zkZ@PZ_NVV2R<0DZ93
+l134
+L64
+VRS3IFdz`44WNJh<OMoSkL0
+!s100 c`n4YLYZHzG_C<eN`0?X;0
+R6
+32
+R7
+!i10b 1
+R8
+R35
+R36
+!i113 1
+R11
+R12
+Ecoincidence_detector_neuron_tb
+Z37 w1611357482
+R14
+R17
+R16
+R15
+R1
+R2
+R3
+Z38 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/coincidence_detector_neuron_tb.vhd
+Z39 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/coincidence_detector_neuron_tb.vhd
+l0
+L57
+V0A6gUT3LI>jLEYQM=7D;]3
+!s100 e6Ck5f1kPDVc2lF4Tdz]E3
+R6
+32
+R7
+!i10b 1
+R8
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/coincidence_detector_neuron_tb.vhd|
+Z41 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/coincidence_detector_neuron_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R17
+R16
+R15
+R1
+R2
+DEx4 work 30 coincidence_detector_neuron_tb 0 22 0A6gUT3LI>jLEYQM=7D;]3
+l145
+L64
+VFQe<SPZ5lR23AJd_J]:E?0
+!s100 cZeGWRF4ml@RcfATg>_=i2
+R6
+32
+R7
+!i10b 1
+R8
+R40
+R41
+!i113 1
+R11
+R12
+Edelay_line
+Z42 w1611320058
+R17
+R16
+R15
+R1
+R2
+R3
+Z43 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/delay_line.vhd
+Z44 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/delay_line.vhd
+l0
+L55
+VjTgN1mjSi=LJ;na62]]4J0
+!s100 QnCllkDJQE8:`@<c]_P@K2
+R6
+32
+R7
+!i10b 1
+R8
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/delay_line.vhd|
+Z46 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/delay_line.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R17
+R16
+R15
+R1
+R2
+DEx4 work 10 delay_line 0 22 jTgN1mjSi=LJ;na62]]4J0
+l99
+L71
+VPEcGcYUOF^>@Gz]AWJOEh2
+!s100 6:DKKVG@bP_ReVcm1nd<m1
+R6
+32
+R7
+!i10b 1
+R8
+R45
+R46
+!i113 1
+R11
+R12
+Edelay_line_tb
+Z47 w1611357502
+R14
+R17
+R16
+R15
+R1
+R2
+R3
+Z48 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/delay_line_tb.vhd
+Z49 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/delay_line_tb.vhd
+l0
+L57
+VbejbJKEVbLF4N9OVm<FWA2
+!s100 cn6OW>2gKAE0NhhB>@ZH^0
+R6
+32
+R7
+!i10b 1
+R8
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/delay_line_tb.vhd|
+Z51 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/delay_line_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R17
+R16
+R15
+R1
+R2
+DEx4 work 13 delay_line_tb 0 22 bejbJKEVbLF4N9OVm<FWA2
+l143
+L64
+VU1eSPDP]gJZ@54Z5fKPzS2
+!s100 4EYDQeU2zBa_^I96lA1dX3
+R6
+32
+R7
+!i10b 1
+R8
+R50
+R51
+!i113 1
+R11
+R12
+Edelay_lines_connection
+Z52 w1611333748
+R17
+R16
+R15
+R1
+R2
+R3
+Z53 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/delay_lines_connection.vhd
+Z54 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/delay_lines_connection.vhd
+l0
+L55
+VWkVa7KbPXR?3jmzPX?MHY0
+!s100 A4J1N645FfUa1C=e[Bk<I3
+R6
+32
+R7
+!i10b 1
+R8
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/delay_lines_connection.vhd|
+Z56 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/delay_lines_connection.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R17
+R16
+R15
+R1
+R2
+DEx4 work 22 delay_lines_connection 0 22 WkVa7KbPXR?3jmzPX?MHY0
+l105
+L72
+VE9cCh`XcCEY;O[oW3;<az0
+!s100 ;7<W8[]PT9]k9b7[S[AcJ1
+R6
+32
+R7
+!i10b 1
+R8
+R55
+R56
+!i113 1
+R11
+R12
+Edelay_lines_connection_tb
+Z57 w1611357490
+R14
+R17
+R16
+R15
+R1
+R2
+R3
+Z58 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/delay_lines_connection_tb.vhd
+Z59 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/delay_lines_connection_tb.vhd
+l0
+L57
+Vc>zi<dR?Dn55>GTCXEgYN2
+!s100 5GP@[0YmAWWN4?oMJfCPA3
+R6
+32
+R7
+!i10b 1
+R8
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/delay_lines_connection_tb.vhd|
+Z61 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/delay_lines_connection_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R17
+R16
+R15
+R1
+R2
+DEx4 work 25 delay_lines_connection_tb 0 22 c>zi<dR?Dn55>GTCXEgYN2
+l145
+L64
+V]gZ9A;i0cW9VkJ1EYH<eR3
+!s100 69eKG[oZL_3QXF[lR>@aV3
+R6
+32
+R7
+!i10b 1
+R8
+R60
+R61
+!i113 1
+R11
+R12
+Eitd_network
+Z62 w1611358227
+R1
+R2
+R3
+Z63 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/itd_network.vhd
+Z64 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/itd_network.vhd
+l0
+L52
+VgBIM2R]:^VJ6bLMBg>CZC1
+!s100 [TOWd?`K^o@?AiX7UdYVa0
+R6
+32
+Z65 !s110 1611428814
+!i10b 1
+R8
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/itd_network.vhd|
+Z67 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/MSO/ITD/itd_network.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 11 itd_network 0 22 gBIM2R]:^VJ6bLMBg>CZC1
+l123
+L71
+Vh2DHnIX;]5JSPaO8Ea>g11
+!s100 _64iSG[g[<hN<KfDjE5Nm1
+R6
+32
+R65
+!i10b 1
+R8
+R66
+R67
+!i113 1
+R11
+R12
+Eitd_network_tb
+Z68 w1611428807
+R14
+R17
+R16
+R15
+R1
+R2
+R3
+Z69 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/itd_network_tb.vhd
+Z70 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/itd_network_tb.vhd
+l0
+L57
+V9KJlV[hk9Dh4KFfK]YJ7D1
+!s100 67S`lFebZb`Mal1ZB`fz82
+R6
+32
+R65
+!i10b 1
+Z71 !s108 1611428814.000000
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/itd_network_tb.vhd|
+Z73 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/MSO/ITD/itd_network_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R17
+R16
+R15
+R1
+R2
+Z74 DEx4 work 14 itd_network_tb 0 22 9KJlV[hk9Dh4KFfK]YJ7D1
+l167
+L64
+V<EETjeiFo`nBg@DQ:[lWY1
+!s100 8Ekml8`]a3AWSElB[B09z2
+R6
+32
+R65
+!i10b 1
+R71
+R72
+R73
 !i113 1
 R11
 R12
 Espherical_bushy_cell
-Z27 w1610625756
+Z75 w1610625756
 R1
 R2
 R3
-Z28 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/spherical_bushy_cell.vhd
-Z29 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/spherical_bushy_cell.vhd
+Z76 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/spherical_bushy_cell.vhd
+Z77 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/spherical_bushy_cell.vhd
 l0
 L52
 VVN2FK?8V`>YjmfgfRQlh01
 !s100 n16A`584K;B?8>M9:;1]^2
 R6
 32
-R7
+Z78 !s110 1611428812
 !i10b 1
-R8
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/spherical_bushy_cell.vhd|
-Z31 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/spherical_bushy_cell.vhd|
+Z79 !s108 1611428812.000000
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/spherical_bushy_cell.vhd|
+Z81 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Source/AVCN/spherical_bushy_cell.vhd|
 !i113 1
 R11
 R12
@@ -125,16 +575,16 @@ VTieAToK>iSXGmil<S[IKJ0
 !s100 SeZRf1=D_`O>^F>=?:=g?3
 R6
 32
-R7
+R78
 !i10b 1
-R8
-R30
-R31
+R79
+R80
+R81
 !i113 1
 R11
 R12
 Espherical_bushy_cell_tb
-Z32 w1610663716
+Z82 w1611159585
 R14
 R15
 R16
@@ -142,19 +592,19 @@ R17
 R1
 R2
 R3
-Z33 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/spherical_bushy_cell_tb.vhd
-Z34 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/spherical_bushy_cell_tb.vhd
+Z83 8D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/spherical_bushy_cell_tb.vhd
+Z84 FD:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/spherical_bushy_cell_tb.vhd
 l0
 L56
 VgCNd=:CjoLlIFQMT:Pnjj2
 !s100 ;h_QbkO;7aUP0kGHCmIB=0
 R6
 32
-R7
+R78
 !i10b 1
-R8
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/spherical_bushy_cell_tb.vhd|
-Z36 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/spherical_bushy_cell_tb.vhd|
+R79
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/spherical_bushy_cell_tb.vhd|
+Z86 !s107 D:/Universidad/Repositorios/GitHub/Doctorado/nssoc/nssoc/Testbench/AVCN/spherical_bushy_cell_tb.vhd|
 !i113 1
 R11
 R12
@@ -168,15 +618,15 @@ R2
 DEx4 work 23 spherical_bushy_cell_tb 0 22 gCNd=:CjoLlIFQMT:Pnjj2
 l108
 L63
-VaF=dG01b?l8bHMX0l796[0
-!s100 BiC12U]aZCo4f[EbYCFXA0
+V2a31WSnJJ32cJghBij6n60
+!s100 TmfSdb?g^Z]FN>kKA`6K83
 R6
 32
-R7
+R78
 !i10b 1
-R8
-R35
-R36
+R79
+R85
+R86
 !i113 1
 R11
 R12
