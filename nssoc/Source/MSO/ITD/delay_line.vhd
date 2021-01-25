@@ -1,79 +1,111 @@
-----------------------------------------------------------------------------------
--- Company: University of Seville
--- Engineer: Daniel Gutierrez-Galan
--- 
--- Create Date: 10.09.2018 21:23:12
--- Design Name: location_neuron_array
--- Module Name: simple_location_neuron - Behavioral
--- Project Name: SoundSourceLocation (SSL)
--- Target Devices: FPGA ZTEX 2.13
--- Tool Versions: 
+--/////////////////////////////////////////////////////////////////////////////////
+--//                                                                             //
+--//    Copyright (c) 2020  Daniel Gutierrez Galan                               //
+--//                                                                             //
+--//    This file is part of NSSOC project.                                      //
+--//                                                                             //
+--//    NSSOC is free software: you can redistribute it and/or modify            //
+--//    it under the terms of the GNU General Public License as published by     //
+--//    the Free Software Foundation, either version 3 of the License, or        //
+--//    (at your option) any later version.                                      //
+--//                                                                             //
+--//    NSSOC is distributed in the hope that it will be useful,                 //
+--//    but WITHOUT ANY WARRANTY; without even the implied warranty of           //
+--//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the              //
+--//    GNU General Public License for more details.                             //
+--//                                                                             //
+--//    You should have received a copy of the GNU General Public License        //
+--//    along with NSSOC. If not, see <http://www.gnu.org/licenses/>.            //
+--//                                                                             //
+--/////////////////////////////////////////////////////////////////////////////////
+
+-------------------------------------------------------------------------------
+-- Title      : Delay line of the Jeffress model
+-- Project    : NSSOC
+-------------------------------------------------------------------------------
+-- File       : delay_line.vhd
+-- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
+-- Company    : University of Seville
+-- Created    : 2018-09-10
+-- Last update: 2021-01-21
+-- Platform   : any
+-- Standard   : VHDL'93/02
+-------------------------------------------------------------------------------
 -- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-- Copyright (c) 2020 
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2020-01-20  1.0      dgutierrez	Created
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+-- Libraries
+-------------------------------------------------------------------------------
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 USE IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 USE IEEE.STD_LOGIC_ARITH.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 
+-------------------------------------------------------------------------------
+-- Entity declaration
+-------------------------------------------------------------------------------
 ENTITY delay_line IS
     GENERIC (
-        TRANSMISSION_TIME : INTEGER := 500; --us
-        CLOCK_FREQ : INTEGER := 50000000 --Hz
+        TRANSMISSION_TIME : INTEGER := 500;     -- In microseconds
+        CLOCK_FREQ        : INTEGER := 50000000 -- In Hz
     );
     PORT (
-        i_clock : IN std_logic;
-        i_nreset : IN std_logic;
-        i_spike_in : IN std_logic;
-        o_spike_delayed : OUT std_logic
+        i_clock           : IN  STD_LOGIC;
+        i_nreset          : IN  STD_LOGIC;
+        i_spike_in        : IN  STD_LOGIC;
+        o_spike_delayed   : OUT STD_LOGIC
     );
-
 END delay_line;
 
+-------------------------------------------------------------------------------
+-- Architecture
+-------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF delay_line IS
 
-    --=================================
-    -- FSM states and signals
-    --=================================
-    TYPE state IS (state_idle, state_hold, state_fire);
-    SIGNAL current_state, next_state : state;
-    -----------------------------------
-
-    --=================================
-    -- Internal timer
-    --=================================
+    ---------------------------------------------------------------------------
+    -- Constants declaration
+    ---------------------------------------------------------------------------
     CONSTANT delay_val : INTEGER := TRANSMISSION_TIME * (CLOCK_FREQ / 1000000);
 
-    SIGNAL delay_timer_timeout : std_logic;
-    SIGNAL delay_timer_enable : std_logic;
-    SIGNAL delay_timer_val : INTEGER RANGE 0 TO delay_val;
-    -----------------------------------
+    ---------------------------------------------------------------------------
+    -- Signals declaration
+    ---------------------------------------------------------------------------
+    
+    --
+    -- FSM states and signals
+    --
+    TYPE state IS (state_idle, state_hold, state_fire);
+    SIGNAL current_state, next_state : state;
 
-    --=================================
-    -- Spike out
-    --=================================
+    --
+    -- Internal timer
+    --
+    SIGNAL delay_timer_timeout : STD_LOGIC;
+    SIGNAL delay_timer_enable  : STD_LOGIC;
+    SIGNAL delay_timer_val     : INTEGER RANGE 0 TO delay_val;
 
-    -----------------------------------
+    ---------------------------------------------------------------------------
+    -- Components declaration
+    ---------------------------------------------------------------------------
 
-BEGIN
+BEGIN  -- architecture Behavioral
 
-    ----------------FSM update state----------------
+    -----------------------------------------------------------------------------
+    -- Processes
+    -----------------------------------------------------------------------------
+
+    -- purpose: FSM update state
+    -- type   : sequential
+    -- inputs : i_clock, i_nreset
+    -- outputs: current_state
     FSM_clocked : PROCESS (i_nreset, i_clock)
     BEGIN
         IF i_nreset = '0' THEN
@@ -83,7 +115,10 @@ BEGIN
         END IF;
     END PROCESS FSM_clocked;
 
-    ----------------FSM states transition----------------
+    -- purpose: FSM states transition
+    -- type   : combinational
+    -- inputs : current_state, i_spike_in, delay_timer_timeout
+    -- outputs: next_state, delay_timer_enable
     FSM_transition : PROCESS (current_state, i_spike_in, delay_timer_timeout)
 
     BEGIN
@@ -120,28 +155,23 @@ BEGIN
         END CASE;
     END PROCESS FSM_transition;
 
-    ----------------Timeout activation ----------------
-
-    timeout_activation : PROCESS (delay_timer_val, delay_timer_enable)--i_clock, i_nreset, delay_timer_val, delay_timer_enable)
+    -- purpose: Timeout activation
+    -- type   : combinational
+    -- inputs : delay_timer_val, delay_timer_enable
+    -- outputs: delay_timer_timeout
+    timeout_activation : PROCESS (delay_timer_val, delay_timer_enable)
     BEGIN
-        --if(i_nreset = '0') then
-        --delay_timer_timeout <= '0';
-        --else
-        --if(rising_edge(i_clock)) then
         IF ((delay_timer_enable = '1') AND (delay_timer_val = 0)) THEN
             delay_timer_timeout <= '1';
         ELSE
             delay_timer_timeout <= '0';
         END IF;
-        --else
-
-        --end if;
-
-        --end if;
     END PROCESS timeout_activation;
 
-    ----------------Timer count ----------------
-
+    -- purpose: Timer count
+    -- type   : sequential
+    -- inputs : i_clock, i_nreset, delay_timer_enable, delay_timer_timeout
+    -- outputs: delay_timer_val
     delay_timer : PROCESS (i_clock, i_nreset, delay_timer_enable, delay_timer_timeout)
     BEGIN
         IF (i_nreset = '0') THEN
@@ -161,16 +191,9 @@ BEGIN
         END IF;
     END PROCESS delay_timer;
 
-    ---------------- Output assignment ----------------
---    PROCESS (i_clock)
---    BEGIN
---        IF (rising_edge(i_clock)) THEN
---            o_spike_delayed <= delay_timer_timeout;
---        ELSE
-
---        END IF;
---    END PROCESS;
-
+    -----------------------------------------------------------------------------
+    -- Output assign
+    -----------------------------------------------------------------------------
     o_spike_delayed <= delay_timer_timeout;
 
 END Behavioral;
