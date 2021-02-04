@@ -54,10 +54,10 @@ ENTITY AVCN IS
         NUM_FREQ_CH : INTEGER := 64
     );
     PORT (
-        i_clock                 : IN  std_logic;
-        i_nreset                : IN  std_logic;
-        i_auditory_nerve_spikes : IN  std_logic_vector(((NUM_FREQ_CH * 2) - 1) DOWNTO 0);
-        o_phase_locked_spikes   : OUT std_logic_vector((NUM_FREQ_CH - 1) DOWNTO 0)
+        i_clock                 : IN  STD_LOGIC;
+        i_nreset                : IN  STD_LOGIC;
+        i_auditory_nerve_spikes : IN  STD_LOGIC_VECTOR(((NUM_FREQ_CH * 2) - 1) DOWNTO 0);
+        o_phase_locked_spikes   : OUT STD_LOGIC_VECTOR((NUM_FREQ_CH - 1) DOWNTO 0)
     );
 END AVCN;
 

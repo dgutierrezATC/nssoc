@@ -51,11 +51,11 @@ USE IEEE.STD_LOGIC_1164.ALL;
 -------------------------------------------------------------------------------
 ENTITY spherical_bushy_cell IS
     PORT (
-        i_clock              : IN  std_logic;
-        i_nreset             : IN  std_logic;
-        i_pos_spike          : IN  std_logic;
-        i_neg_spike          : IN  std_logic;
-        o_phase_locked_spike : OUT std_logic
+        i_clock              : IN  STD_LOGIC;
+        i_nreset             : IN  STD_LOGIC;
+        i_pos_spike          : IN  STD_LOGIC;
+        i_neg_spike          : IN  STD_LOGIC;
+        o_phase_locked_spike : OUT STD_LOGIC
     );
 END spherical_bushy_cell;
 
@@ -70,8 +70,8 @@ ARCHITECTURE Behavioral OF spherical_bushy_cell IS
     ---------------------------------------------------------------------------
     -- Signals declaration
     ---------------------------------------------------------------------------
-    SIGNAL r_last_spike_polarity : std_logic;
-    SIGNAL r_zero_cross          : std_logic;
+    SIGNAL r_last_spike_polarity : STD_LOGIC;
+    SIGNAL r_zero_cross          : STD_LOGIC;
 
     ---------------------------------------------------------------------------
     -- Components declaration
@@ -114,7 +114,7 @@ BEGIN  -- architecture Behavioral
         IF i_nreset = '0' THEN
             r_last_spike_polarity <= '0';
         ELSE
-            IF rising_edge(i_clock) THEN
+            IF RISING_EDGE(i_clock) THEN
                 IF i_pos_spike = '1' THEN
                     r_last_spike_polarity <= '1';
                 ELSIF i_neg_spike = '1' THEN
