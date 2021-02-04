@@ -1,87 +1,110 @@
-----------------------------------------------------------------------------------
--- Company: University of Seville
--- Engineer: Daniel Gutierrez-Galan
--- 
--- Create Date:    10:09:34 13/06/2019 
--- Design Name: 
--- Module Name:    events_encoder - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.all; 
+--/////////////////////////////////////////////////////////////////////////////////
+--//                                                                             //
+--//    Copyright (c) 2020  Daniel Gutierrez Galan                               //
+--//                                                                             //
+--//    This file is part of NSSOC.                                              //
+--//                                                                             //
+--//    NSSOC is free software: you can redistribute it and/or modify            //
+--//    it under the terms of the GNU General Public License as published by     //
+--//    the Free Software Foundation, either version 3 of the License, or        //
+--//    (at your option) any later version.                                      //
+--//                                                                             //
+--//    NSSOC is distributed in the hope that it will be useful,                 //
+--//    but WITHOUT ANY WARRANTY; without even the implied warranty of           //
+--//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the              //
+--//    GNU General Public License for more details.                             //
+--//                                                                             //
+--//    You should have received a copy of the GNU General Public License        //
+--//    along with NSSOC. If not, see <http://www.gnu.org/licenses/>.            //
+--//                                                                             //
+--/////////////////////////////////////////////////////////////////////////////////
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+-------------------------------------------------------------------------------
+-- Title      : Antero ventricular coclear nucleus
+-- Project    : NSSOC
+-------------------------------------------------------------------------------
+-- File       : events_encoder.vhd
+-- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
+-- Company    : University of Seville
+-- Created    : 2019-06-13
+-- Last update: 2021-01-13
+-- Platform   : any
+-- Standard   : VHDL'93/02
+-------------------------------------------------------------------------------
+-- Description: Main module
+-------------------------------------------------------------------------------
+-- Copyright (c) 2020 
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2020-01-20  1.0      dgutierrez	Created
+-------------------------------------------------------------------------------
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+-------------------------------------------------------------------------------
+-- Libraries
+-------------------------------------------------------------------------------
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL; 
 
-entity events_encoder is
-	Generic (
-		N_EVENTS      : integer := 16; -- Max number of input event IDs (from 0 to 15): NUM_NEURONS_JEFFRESS_MODEL
-		NBITS_ADDRESS : integer := 4 -- Log2(N_EVENTS)
+-------------------------------------------------------------------------------
+-- Entity declaration
+-------------------------------------------------------------------------------
+ENTITY events_encoder IS
+	GENERIC (
+		N_EVENTS          : INTEGER := 16; -- Max number of input event IDs (from 0 to 15): NUM_NEURONS_JEFFRESS_MODEL
+		NBITS_ADDRESS     : INTEGER := 4   -- Log2(N_EVENTS)
 	);
-	Port ( 
-		i_clock           : in  STD_LOGIC;
-		i_reset           : in  STD_LOGIC;
-		i_in_events       : in  STD_LOGIC_VECTOR ((N_EVENTS-1) downto 0);
-		o_out_address     : out STD_LOGIC_VECTOR ((NBITS_ADDRESS-1) downto 0);
-		o_new_out_address : out STD_LOGIC
+	PORT ( 
+		i_clock           : IN  STD_LOGIC;
+		i_reset           : IN  STD_LOGIC;
+		i_in_events       : IN  STD_LOGIC_VECTOR ((N_EVENTS-1) DOWNTO 0);
+		o_out_address     : OUT STD_LOGIC_VECTOR ((NBITS_ADDRESS-1) DOWNTO 0);
+		o_new_out_address : OUT STD_LOGIC
 	);
-end events_encoder;
+    END events_encoder;
 
-architecture Behavioral of events_encoder is
+-------------------------------------------------------------------------------
+-- Architecture
+-------------------------------------------------------------------------------
+ARCHITECTURE Behavioral OF events_encoder IS
 
-begin
---	main_process: process(i_reset, i_clock)
---	begin
---		if (i_reset = '0') then
---			o_out_address     <= (others => '0');
---			o_new_out_address <= '0';
---		else
---            if (rising_edge(i_clock)) then
---                for i in 0 to (N_EVENTS-1) loop
---                    if(i_in_events(i) = '1') then -- We can do this because we are sure we only will get 1 spike at the same time
---                        o_out_address     <= std_logic_vector(to_unsigned(i, o_out_address'length));
---                        o_new_out_address <= '1';
---                        exit;
---                    else
---                        o_new_out_address <= '0';
---                    end if;
---                end loop;
---            else
-                
---            end if;
---        end if;
---	end process main_process;
-	
-        main_process: process(i_in_events)
-        begin
-            for i in 0 to (N_EVENTS-1) loop
-                if(i_in_events(i) = '1') then -- We can do this because we are sure we only will get 1 spike at the same time
-                    o_out_address     <= std_logic_vector(to_unsigned(i, o_out_address'length));
+    ---------------------------------------------------------------------------
+    -- Constants declaration
+    ---------------------------------------------------------------------------
+
+    ---------------------------------------------------------------------------
+    -- Signals declaration
+    ---------------------------------------------------------------------------
+
+
+    ---------------------------------------------------------------------------
+    -- Components declaration
+    ---------------------------------------------------------------------------
+
+    BEGIN  -- architecture Behavioral
+
+        -----------------------------------------------------------------------------
+        -- Processes
+        -----------------------------------------------------------------------------
+
+        -- purpose: Encode the input data
+        -- type   : combinational
+        -- inputs : i_in_events
+        -- outputs: o_out_address, o_new_out_address
+        main_process: PROCESS (i_in_events)
+        BEGIN
+            FOR i IN 0 TO (N_EVENTS-1) LOOP
+                IF (i_in_events(i) = '1') THEN -- We can do this because we are sure we only will get 1 spike at the same time
+                    o_out_address     <= STD_LOGIC_VECTOR(TO_UNSIGNED(i, o_out_address'LENGTH));
                     o_new_out_address <= '1';
-                    exit;
-                else
+                    EXIT;
+                ELSE
                     o_new_out_address <= '0';
-                    o_out_address     <= (others => '0');
-                end if;
-            end loop;
-        end process main_process;
+                    o_out_address     <= (OTHERS => '0');
+                END IF;
+            END LOOP;
+        END PROCESS main_process;
 
-end Behavioral;
+END Behavioral;
 
