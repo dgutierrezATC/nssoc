@@ -302,7 +302,7 @@ BEGIN  -- architecture Behavioral
 
     END PROCESS p_stimuli;
 
-        -- purpose: Saving out the input spikes
+    -- purpose: Saving out the input spikes
     -- type   : sequential
     -- inputs : i_clock, i_nreset, i_left_ch_spike, i_right_ch_spike
     -- outputs: 

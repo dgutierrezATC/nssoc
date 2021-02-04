@@ -93,13 +93,13 @@ ARCHITECTURE Behavioral OF coincidence_detector_neuron_array_tb IS
     CONSTANT c_CLOCK_FREQ                     : INTEGER := 50000000; -- In Hz
 
     -- Component input ports
-    SIGNAL i_clock              : std_logic := '0';
-    SIGNAL i_nreset             : std_logic := '0';
-    SIGNAL i_left_spike_stream  : std_logic_vector((c_COINCIDENCE_DETECTOR_NUM - 1) DOWNTO 0) := (OTHERS => '0');
-    SIGNAL i_right_spike_stream : std_logic_vector((c_COINCIDENCE_DETECTOR_NUM - 1) DOWNTO 0) := (OTHERS => '0');
+    SIGNAL i_clock              : STD_LOGIC := '0';
+    SIGNAL i_nreset             : STD_LOGIC := '0';
+    SIGNAL i_left_spike_stream  : STD_LOGIC_VECTOR((c_COINCIDENCE_DETECTOR_NUM - 1) DOWNTO 0) := (OTHERS => '0');
+    SIGNAL i_right_spike_stream : STD_LOGIC_VECTOR((c_COINCIDENCE_DETECTOR_NUM - 1) DOWNTO 0) := (OTHERS => '0');
 
     -- Component output ports
-    SIGNAL o_neurons_coincidence : std_logic_vector((c_COINCIDENCE_DETECTOR_NUM - 1) DOWNTO 0);
+    SIGNAL o_neurons_coincidence : STD_LOGIC_VECTOR((c_COINCIDENCE_DETECTOR_NUM - 1) DOWNTO 0);
 
     ---------------------------------------------------------------------------
     -- Testbench signals declaration
@@ -198,8 +198,8 @@ BEGIN  -- architecture Behavioral
         -- Report the testbench is being sync with the clock
         REPORT "Sync..." SEVERITY NOTE;
 
-        wait until i_clock'event and i_clock = '1';
-        wait for c_i_clock_period*10;
+        WAIT UNTIL i_clock'EVENT AND i_clock = '1';
+        WAIT FOR c_i_clock_period*10;
 
 
         --
