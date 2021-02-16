@@ -77,8 +77,8 @@ ARCHITECTURE behavior OF events_mask_tb IS
     ---------------------------------------------------------------------------
 
 	-- Component constants
-	CONSTANT c_NBITS_ADDRESS   : INTEGER := 4;
-	CONSTANT c_CHANNEL_VAL     : INTEGER := 1;
+	CONSTANT c_NBITS_ADDRESS   : INTEGER := 5;
+	CONSTANT c_CHANNEL_VAL     : INTEGER := 33;
 
 	-- Component input ports
 	SIGNAL i_clock             : STD_LOGIC := '0';
@@ -162,7 +162,7 @@ BEGIN  -- architecture Behavioral
 		--
         -- First case: generate 16 addresses
 		--
-		FOR i IN 0 TO 15 LOOP
+		FOR i IN 0 TO ((2**c_NBITS_ADDRESS) - 1) LOOP
 			i_input_address <= STD_LOGIC_VECTOR(TO_UNSIGNED(i, i_input_address'LENGTH));
 			WAIT FOR c_i_clock_period*10;
 		END LOOP;

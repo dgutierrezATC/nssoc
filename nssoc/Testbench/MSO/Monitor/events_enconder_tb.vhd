@@ -81,8 +81,8 @@ ARCHITECTURE behavior OF events_encoder_tb IS
     ---------------------------------------------------------------------------
 
 	-- Component constants
-	CONSTANT c_N_EVENTS      : INTEGER := 16; 
-	CONSTANT c_NBITS_ADDRESS : INTEGER := 4;
+	CONSTANT c_N_EVENTS      : INTEGER := 32; 
+	CONSTANT c_NBITS_ADDRESS : INTEGER := 5;
 
 	-- Component input ports
 	SIGNAL i_clock           : STD_LOGIC := '0';
@@ -171,7 +171,7 @@ BEGIN  -- architecture Behavioral
 		--
 		REPORT "Starting the first testbench case..." SEVERITY NOTE;
 
-		FOR i IN 0 TO 15 LOOP
+		FOR i IN 0 TO (c_N_EVENTS-1) LOOP
 			REPORT "Generating event..." SEVERITY NOTE;
 			i_in_events <= STD_LOGIC_VECTOR(TO_UNSIGNED(2**i, i_in_events'LENGTH));
 			WAIT FOR c_i_clock_period;

@@ -85,8 +85,8 @@ ARCHITECTURE behavior OF mso_events_monitor_module_tb IS
     ---------------------------------------------------------------------------
 
     -- Component constants
-    CONSTANT c_NDETECTOR_NEURONS       : INTEGER := 16;
-    CONSTANT c_NBITS_NDETECTOR_NEURONS : INTEGER := 4;
+    CONSTANT c_NDETECTOR_NEURONS       : INTEGER := 32;
+    CONSTANT c_NBITS_NDETECTOR_NEURONS : INTEGER := 5;
     CONSTANT c_FIFO_DEPTH              : INTEGER := 32;
     CONSTANT c_CHANNEL_VAL             : INTEGER := 1;
 
