@@ -20,7 +20,7 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Antero ventricular coclear nucleus
+-- Title      : Events mask
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
 -- File       : events_mask.vhd
@@ -99,15 +99,28 @@ ARCHITECTURE Behavioral OF events_mask IS
         -----------------------------------------------------------------------------
         -- Processes
         -----------------------------------------------------------------------------
-
-        -- purpose: Apply a mask to the input data
-        -- type   : combinational
-        -- inputs : i_input_address
-        -- outputs: masked_aer
-        mask_process : PROCESS (i_input_address)
-        BEGIN
-            masked_aer <= SSSL & xSO_TYPE & i_input_address & LR & CHANNEL & POL;
-        END PROCESS mask_process;
+        gen_masked_aer_case_1: if NBITS_ADDRESS < 5 GENERATE
+            -- purpose: Apply a mask to the input data
+            -- type   : combinational
+            -- inputs : i_input_address
+            -- outputs: masked_aer
+            mask_process : PROCESS (i_input_address)
+                VARIABLE v_lendif : INTEGER := 5 - NBITS_ADDRESS;
+            BEGIN
+                masked_aer <= SSSL & xSO_TYPE & filler((v_lendif-1) DOWNTO 0) & i_input_address & LR & CHANNEL & POL;
+            END PROCESS mask_process;
+        END GENERATE gen_masked_aer_case_1;
+        
+        gen_masked_aer_case_2: if NBITS_ADDRESS = 5 GENERATE
+            -- purpose: Apply a mask to the input data
+            -- type   : combinational
+            -- inputs : i_input_address
+            -- outputs: masked_aer
+            mask_process : PROCESS (i_input_address)
+            BEGIN
+                masked_aer <= SSSL & xSO_TYPE & i_input_address & LR & CHANNEL & POL;
+            END PROCESS mask_process;
+        END GENERATE gen_masked_aer_case_2;
 
         -----------------------------------------------------------------------------
         -- Output assign
