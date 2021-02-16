@@ -69,13 +69,21 @@ ARCHITECTURE Behavioral OF events_mask IS
     ---------------------------------------------------------------------------
     -- Constants declaration
     ---------------------------------------------------------------------------
-    CONSTANT channel_mask : STD_LOGIC_VECTOR(5 DOWNTO 0) := STD_LOGIC_VECTOR(to_unsigned(CHANNEL_VAL, 6));
 
-    CONSTANT SSSL         : STD_LOGIC := '1';                     -- '0' means NAS data; '1' means Sound Source Localization data
-    CONSTANT xSO_type     : STD_LOGIC := '0';                     -- '0' means MSO; '1' means LSO
-    CONSTANT LR           : STD_LOGIC := '0';                     -- This field does not care
-    CONSTANT POL          : STD_LOGIC := '0';                     -- '0' means POSITIVE; '1' means NEGATIVE.
-    CONSTANT filler       : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; --
+    -- 0
+    CONSTANT POL          :  STD_LOGIC := '0';                     -- '0' means POSITIVE; '1' means NEGATIVE.
+    -- 1 TO 7
+    CONSTANT CHANNEL       : STD_LOGIC_VECTOR(6 DOWNTO 0) := STD_LOGIC_VECTOR(to_unsigned(CHANNEL_VAL, 7));
+    -- 8
+    CONSTANT LR            : STD_LOGIC := '0';                     -- This field does not care
+    -- 9 TO 13
+    SIGNAL NEURON_ID       : STD_LOGIC_VECTOR(4 DOWNTO 0);
+    -- 14
+    CONSTANT xSO_TYPE      : STD_LOGIC := '0';                     -- '0' means MSO; '1' means LSO
+    -- 15
+    CONSTANT SSSL          : STD_LOGIC := '1';                     -- '0' means NAS data; '1' means Sound Source Localization data
+
+    CONSTANT filler        : STD_LOGIC_VECTOR(4 DOWNTO 0) := (OTHERS => '0'); --
 
     ---------------------------------------------------------------------------
     -- Signals declaration
@@ -98,7 +106,7 @@ ARCHITECTURE Behavioral OF events_mask IS
         -- outputs: masked_aer
         mask_process : PROCESS (i_input_address)
         BEGIN
-            masked_aer <= SSSL & xSO_type & filler & i_input_address & LR & channel_mask & POL;
+            masked_aer <= SSSL & xSO_TYPE & i_input_address & LR & CHANNEL & POL;
         END PROCESS mask_process;
 
         -----------------------------------------------------------------------------
