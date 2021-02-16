@@ -79,10 +79,10 @@ ARCHITECTURE Behavioral OF mso_events_monitor_module IS
     ---------------------------------------------------------------------------
     -- Signals declaration
     ---------------------------------------------------------------------------
-    SIGNAL ec_output_address     : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL ec_output_address     : STD_LOGIC_VECTOR((NBITS_NDETECTOR_NEURONS-1) DOWNTO 0);
     SIGNAL ec_new_output_address : STD_LOGIC;
 
-    SIGNAL em_aer_data           : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL em_aer_data           : STD_LOGIC_VECTOR((NBITS_NDETECTOR_NEURONS-1) DOWNTO 0);
 
     SIGNAL ef_write_enable       : STD_LOGIC;
     SIGNAL ef_fifo_full          : STD_LOGIC;
