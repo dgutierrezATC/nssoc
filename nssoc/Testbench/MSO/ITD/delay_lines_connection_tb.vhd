@@ -20,7 +20,7 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Delay line of the Jeffress model
+-- Title      : Testbench for the delay line array of the Jeffress model
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
 -- File       : delay_line_connection_tb.vhd

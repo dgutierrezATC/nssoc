@@ -20,10 +20,10 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Medial Superior Olivar (MSO) model
+-- Title      : Testbench for the Medial Superior Olivar (MSO) model
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
--- File       : MSO.vhd
+-- File       : MSO_tb.vhd
 -- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
 -- Company    : University of Seville
 -- Created    : 2018-11-27
@@ -44,7 +44,6 @@
 -- Libraries
 -------------------------------------------------------------------------------
 LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 USE IEEE.STD_LOGIC_ARITH.ALL;

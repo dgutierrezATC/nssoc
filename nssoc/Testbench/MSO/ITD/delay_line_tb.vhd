@@ -20,10 +20,10 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Delay line of the Jeffress model
+-- Title      : Testbench for the delay line of the Jeffress model
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
--- File       : delay_line.vhd
+-- File       : delay_line_tb.vhd
 -- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
 -- Company    : University of Seville
 -- Created    : 2018-09-10

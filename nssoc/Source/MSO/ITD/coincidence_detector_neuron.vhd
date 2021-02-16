@@ -20,7 +20,7 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Delay line of the Jeffress model
+-- Title      : Coincidence detector neuron of the Jeffress model
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
 -- File       : coincidence_detector_neuron.vhd

@@ -23,7 +23,7 @@
 -- Title      : Antero ventricular coclear nucleus
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
--- File       : events_mask.vhd
+-- File       : events_mask_tb.vhd
 -- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
 -- Company    : University of Seville
 -- Created    : 2019-06-13

@@ -20,10 +20,10 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Delay line of the Jeffress model
+-- Title      : Testbench for the spike-based Superior Olivary Complex (SOC) model
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
--- File       : mso_events_monitor_top.vhd
+-- File       : SOC_tb.vhd
 -- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
 -- Company    : University of Seville
 -- Created    : 2019-05-01

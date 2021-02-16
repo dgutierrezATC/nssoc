@@ -20,10 +20,10 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Delay line of the Jeffress model
+-- Title      : Testbench for the MSO events monitor module
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
--- File       : mso_events_monitor_module.vhd
+-- File       : mso_events_monitor_module_tb.vhd
 -- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
 -- Company    : University of Seville
 -- Created    : 2019-07-29

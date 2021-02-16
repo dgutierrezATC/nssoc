@@ -20,7 +20,7 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Delay line of the Jeffress model
+-- Title      : Testbench of the coincidence detector neuron model
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
 -- File       : coincidence_detector_neuron_tb.vhd

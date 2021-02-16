@@ -20,10 +20,10 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Delay line of the Jeffress model
+-- Title      : Superior Olivary Complex model
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
--- File       : mso_events_monitor_top.vhd
+-- File       : SOC.vhd
 -- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
 -- Company    : University of Seville
 -- Created    : 2019-05-01

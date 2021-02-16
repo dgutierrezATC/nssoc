@@ -20,10 +20,10 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Delay line of the Jeffress model
+-- Title      : Coincidence detector neuron array
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
--- File       : coincidence_detector_neuron.vhd
+-- File       : coincidence_detector_neuron_array.vhd
 -- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
 -- Company    : University of Seville
 -- Created    : 2018-01-13

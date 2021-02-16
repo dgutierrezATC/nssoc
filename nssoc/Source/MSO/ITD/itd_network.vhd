@@ -20,10 +20,10 @@
 --/////////////////////////////////////////////////////////////////////////////////
 
 -------------------------------------------------------------------------------
--- Title      : Delay line of the Jeffress model
+-- Title      : ITD network of the Jeffress model
 -- Project    : NSSOC
 -------------------------------------------------------------------------------
--- File       : coincidence_detector_neuron.vhd
+-- File       : itd_network.vhd
 -- Author     : Daniel Gutierrez-Galan (dgutierrez@atc.us.es)
 -- Company    : University of Seville
 -- Created    : 2018-11-13
