@@ -149,7 +149,7 @@ ARCHITECTURE Behavioral OF SOC_tb IS
 
     FILE tb_input_ts_stimuli_file   : TEXT OPEN READ_MODE  IS c_absolute_path & "pure_tone_fs48000duration1000frequency500amplitude1_3_tss.txt";  -- Input spikes filename
     FILE tb_input_addr_stimuli_file : TEXT OPEN READ_MODE  IS c_absolute_path & "pure_tone_fs48000duration1000frequency500amplitude1_3_addrs.txt";  -- Input spikes filename;
-    FILE tb_output_aer_events_file  : TEXT OPEN WRITE_MODE IS c_absolute_path & "pure_tone_fs48000duration1000frequency500amplitude1_3_soc_out.txt";  -- Input spikes filename;
+    FILE tb_output_aer_events_file  : TEXT OPEN WRITE_MODE IS c_absolute_path & "pure_tone_fs48000duration1000frequency500amplitude1_3_soc_out3.txt";  -- Input spikes filename;
 
 BEGIN
 
@@ -323,7 +323,10 @@ BEGIN
 
     END PROCESS p_stimuli;
 
-
+    -- purpose: Save out the testbench results into a file
+    -- type   : combinational
+    -- inputs : 
+    -- outputs: 
     save_results_process : PROCESS
         VARIABLE v_OLINE : LINE;
         VARIABLE v_sim_time_str : STRING(1 TO 30); -- 30 chars should be enough
@@ -361,7 +364,7 @@ BEGIN
             v_event_neuron_id := conv_integer(unsigned(o_soc_aer_out_data(13 DOWNTO 9)));
             REPORT "Neuron ID: " & INTEGER'IMAGE(v_event_neuron_id);
 
-            v_event_channel := conv_integer(unsigned(o_soc_aer_out_data(6 DOWNTO 1)));
+            v_event_channel := conv_integer(unsigned(o_soc_aer_out_data(7 DOWNTO 1)));
             REPORT "Freq channel: " & INTEGER'IMAGE(v_event_channel);
 
             REPORT "Output event counter: " & INTEGER'IMAGE(v_out_events_counter);
