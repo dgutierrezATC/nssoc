@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="NAS_SOC_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="NAS_SOC_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2467666666666fs"></ZoomStartTime>
+      <ZoomEndTime time="3143666666667fs"></ZoomEndTime>
+      <Cursor1Time time="3031000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="364"></NameColumnWidth>
+      <ValueColumnWidth column_width="129"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="191" />
+   <wvobject fp_name="/NAS_SOC_top_tb/i_sys_clock" type="logic">
+      <obj_property name="ElementShortName">i_sys_clock</obj_property>
+      <obj_property name="ObjectShortName">i_sys_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/i_sys_reset" type="logic">
+      <obj_property name="ElementShortName">i_sys_reset</obj_property>
+      <obj_property name="ObjectShortName">i_sys_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/i_I2S_sd" type="logic">
+      <obj_property name="ElementShortName">i_I2S_sd</obj_property>
+      <obj_property name="ObjectShortName">i_I2S_sd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/i_I2S_sck" type="logic">
+      <obj_property name="ElementShortName">i_I2S_sck</obj_property>
+      <obj_property name="ObjectShortName">i_I2S_sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/i_I2S_ws" type="logic">
+      <obj_property name="ElementShortName">i_I2S_ws</obj_property>
+      <obj_property name="ObjectShortName">i_I2S_ws</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/i_AER_ack" type="logic">
+      <obj_property name="ElementShortName">i_AER_ack</obj_property>
+      <obj_property name="ObjectShortName">i_AER_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/o_AER_req" type="logic">
+      <obj_property name="ElementShortName">o_AER_req</obj_property>
+      <obj_property name="ObjectShortName">o_AER_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/o_AER_data" type="array">
+      <obj_property name="ElementShortName">o_AER_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_AER_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/tb_start_stimuli" type="logic">
+      <obj_property name="ElementShortName">tb_start_stimuli</obj_property>
+      <obj_property name="ObjectShortName">tb_start_stimuli</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/tb_end_stimuli" type="logic">
+      <obj_property name="ElementShortName">tb_end_stimuli</obj_property>
+      <obj_property name="ObjectShortName">tb_end_stimuli</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/c_sys_clock_period" type="other">
+      <obj_property name="ElementShortName">c_sys_clock_period</obj_property>
+      <obj_property name="ObjectShortName">c_sys_clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/c_I2S_sck_num_sys_clock_cycles" type="other">
+      <obj_property name="ElementShortName">c_I2S_sck_num_sys_clock_cycles</obj_property>
+      <obj_property name="ObjectShortName">c_I2S_sck_num_sys_clock_cycles</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/c_tb_absolute_path" type="array">
+      <obj_property name="ElementShortName">c_tb_absolute_path[1:122]</obj_property>
+      <obj_property name="ObjectShortName">c_tb_absolute_path[1:122]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider14">
+      <obj_property name="label">uut</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/i_sys_clock" type="logic">
+      <obj_property name="ElementShortName">i_sys_clock</obj_property>
+      <obj_property name="ObjectShortName">i_sys_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/i_sys_reset" type="logic">
+      <obj_property name="ElementShortName">i_sys_reset</obj_property>
+      <obj_property name="ObjectShortName">i_sys_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/i_I2S_sd" type="logic">
+      <obj_property name="ElementShortName">i_I2S_sd</obj_property>
+      <obj_property name="ObjectShortName">i_I2S_sd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/i_I2S_sck" type="logic">
+      <obj_property name="ElementShortName">i_I2S_sck</obj_property>
+      <obj_property name="ObjectShortName">i_I2S_sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/i_I2S_ws" type="logic">
+      <obj_property name="ElementShortName">i_I2S_ws</obj_property>
+      <obj_property name="ObjectShortName">i_I2S_ws</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/o_AER_data" type="array">
+      <obj_property name="ElementShortName">o_AER_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_AER_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/o_AER_req" type="logic">
+      <obj_property name="ElementShortName">o_AER_req</obj_property>
+      <obj_property name="ObjectShortName">o_AER_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/i_AER_ack" type="logic">
+      <obj_property name="ElementShortName">i_AER_ack</obj_property>
+      <obj_property name="ObjectShortName">i_AER_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_nas_raw_output_spikes_left" type="array">
+      <obj_property name="ElementShortName">w_nas_raw_output_spikes_left[127:0]</obj_property>
+      <obj_property name="ObjectShortName">w_nas_raw_output_spikes_left[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_nas_raw_output_spikes_right" type="array">
+      <obj_property name="ElementShortName">w_nas_raw_output_spikes_right[127:0]</obj_property>
+      <obj_property name="ObjectShortName">w_nas_raw_output_spikes_right[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_mso_raw_output_spikes" type="array">
+      <obj_property name="ElementShortName">w_mso_raw_output_spikes[127:0]</obj_property>
+      <obj_property name="ObjectShortName">w_mso_raw_output_spikes[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_SOC_AER_data" type="array">
+      <obj_property name="ElementShortName">w_SOC_AER_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_SOC_AER_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_SOC_AER_req" type="logic">
+      <obj_property name="ElementShortName">w_SOC_AER_req</obj_property>
+      <obj_property name="ObjectShortName">w_SOC_AER_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_SOC_AER_ack" type="logic">
+      <obj_property name="ElementShortName">w_SOC_AER_ack</obj_property>
+      <obj_property name="ObjectShortName">w_SOC_AER_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_NAS_AER_data" type="array">
+      <obj_property name="ElementShortName">w_NAS_AER_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_NAS_AER_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_NAS_AER_req" type="logic">
+      <obj_property name="ElementShortName">w_NAS_AER_req</obj_property>
+      <obj_property name="ObjectShortName">w_NAS_AER_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_NAS_AER_ack" type="logic">
+      <obj_property name="ElementShortName">w_NAS_AER_ack</obj_property>
+      <obj_property name="ObjectShortName">w_NAS_AER_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_merger_OUT_AER_data" type="array">
+      <obj_property name="ElementShortName">w_merger_OUT_AER_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_merger_OUT_AER_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_merger_OUT_AER_req" type="logic">
+      <obj_property name="ElementShortName">w_merger_OUT_AER_req</obj_property>
+      <obj_property name="ObjectShortName">w_merger_OUT_AER_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/w_merger_OUT_AER_ack" type="logic">
+      <obj_property name="ElementShortName">w_merger_OUT_AER_ack</obj_property>
+      <obj_property name="ObjectShortName">w_merger_OUT_AER_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/c_NAS_NUM_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">c_NAS_NUM_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">c_NAS_NUM_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/c_MSO_START_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">c_MSO_START_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">c_MSO_START_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/c_MSO_END_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">c_MSO_END_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">c_MSO_END_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/c_MSO_NUM_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">c_MSO_NUM_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">c_MSO_NUM_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/C_MSO_NBITS_NUM_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">C_MSO_NBITS_NUM_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">C_MSO_NBITS_NUM_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/c_MSO_NUM_ITD_NEURONS" type="other">
+      <obj_property name="ElementShortName">c_MSO_NUM_ITD_NEURONS</obj_property>
+      <obj_property name="ObjectShortName">c_MSO_NUM_ITD_NEURONS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/c_MSO_NBITS_NUM_ITD_NEURONS" type="other">
+      <obj_property name="ElementShortName">c_MSO_NBITS_NUM_ITD_NEURONS</obj_property>
+      <obj_property name="ObjectShortName">c_MSO_NBITS_NUM_ITD_NEURONS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/c_MSO_ITD_MAX_DETECTION_TIME" type="other">
+      <obj_property name="ElementShortName">c_MSO_ITD_MAX_DETECTION_TIME</obj_property>
+      <obj_property name="ObjectShortName">c_MSO_ITD_MAX_DETECTION_TIME</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/c_MSO_ITD_DETECTION_TIME_OVERLAP" type="other">
+      <obj_property name="ElementShortName">c_MSO_ITD_DETECTION_TIME_OVERLAP</obj_property>
+      <obj_property name="ObjectShortName">c_MSO_ITD_DETECTION_TIME_OVERLAP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/c_CLOCK_FREQ" type="other">
+      <obj_property name="ElementShortName">c_CLOCK_FREQ</obj_property>
+      <obj_property name="ObjectShortName">c_CLOCK_FREQ</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider45">
+      <obj_property name="label">SOC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/i_clock" type="logic">
+      <obj_property name="ElementShortName">i_clock</obj_property>
+      <obj_property name="ObjectShortName">i_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/i_nreset" type="logic">
+      <obj_property name="ElementShortName">i_nreset</obj_property>
+      <obj_property name="ObjectShortName">i_nreset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/i_nas_left_out_spikes" type="array">
+      <obj_property name="ElementShortName">i_nas_left_out_spikes[127:0]</obj_property>
+      <obj_property name="ObjectShortName">i_nas_left_out_spikes[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/i_nas_right_out_spikes" type="array">
+      <obj_property name="ElementShortName">i_nas_right_out_spikes[127:0]</obj_property>
+      <obj_property name="ObjectShortName">i_nas_right_out_spikes[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/o_soc_aer_out_data" type="array">
+      <obj_property name="ElementShortName">o_soc_aer_out_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_soc_aer_out_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/o_soc_aer_out_req" type="logic">
+      <obj_property name="ElementShortName">o_soc_aer_out_req</obj_property>
+      <obj_property name="ObjectShortName">o_soc_aer_out_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/i_soc_aer_out_ack" type="logic">
+      <obj_property name="ElementShortName">i_soc_aer_out_ack</obj_property>
+      <obj_property name="ObjectShortName">i_soc_aer_out_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/left_non_phase_locked_spikes" type="array">
+      <obj_property name="ElementShortName">left_non_phase_locked_spikes[7:0]</obj_property>
+      <obj_property name="ObjectShortName">left_non_phase_locked_spikes[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/right_non_phase_locked_spikes" type="array">
+      <obj_property name="ElementShortName">right_non_phase_locked_spikes[7:0]</obj_property>
+      <obj_property name="ObjectShortName">right_non_phase_locked_spikes[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/left_phase_locked_spikes" type="array">
+      <obj_property name="ElementShortName">left_phase_locked_spikes[3:0]</obj_property>
+      <obj_property name="ObjectShortName">left_phase_locked_spikes[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/right_phase_locked_spikes" type="array">
+      <obj_property name="ElementShortName">right_phase_locked_spikes[3:0]</obj_property>
+      <obj_property name="ObjectShortName">right_phase_locked_spikes[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/itd_out_spikes" type="array">
+      <obj_property name="ElementShortName">itd_out_spikes[127:0]</obj_property>
+      <obj_property name="ObjectShortName">itd_out_spikes[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_NAS_NUM_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">g_NAS_NUM_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">g_NAS_NUM_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_MSO_NUM_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">g_MSO_NUM_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">g_MSO_NUM_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_MSO_NBITS_NUM_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">g_MSO_NBITS_NUM_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">g_MSO_NBITS_NUM_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_MSO_START_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">g_MSO_START_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">g_MSO_START_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_MSO_END_FREQ_CH" type="other">
+      <obj_property name="ElementShortName">g_MSO_END_FREQ_CH</obj_property>
+      <obj_property name="ObjectShortName">g_MSO_END_FREQ_CH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_MSO_NUM_ITD_NEURONS" type="other">
+      <obj_property name="ElementShortName">g_MSO_NUM_ITD_NEURONS</obj_property>
+      <obj_property name="ObjectShortName">g_MSO_NUM_ITD_NEURONS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_MSO_NBITS_NUM_ITD_NEURONS" type="other">
+      <obj_property name="ElementShortName">g_MSO_NBITS_NUM_ITD_NEURONS</obj_property>
+      <obj_property name="ObjectShortName">g_MSO_NBITS_NUM_ITD_NEURONS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_MSO_ITD_MAX_DETECTION_TIME" type="other">
+      <obj_property name="ElementShortName">g_MSO_ITD_MAX_DETECTION_TIME</obj_property>
+      <obj_property name="ObjectShortName">g_MSO_ITD_MAX_DETECTION_TIME</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_MSO_ITD_DETECTION_TIME_OVERLAP" type="other">
+      <obj_property name="ElementShortName">g_MSO_ITD_DETECTION_TIME_OVERLAP</obj_property>
+      <obj_property name="ObjectShortName">g_MSO_ITD_DETECTION_TIME_OVERLAP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/g_CLOCK_FREQ" type="other">
+      <obj_property name="ElementShortName">g_CLOCK_FREQ</obj_property>
+      <obj_property name="ObjectShortName">g_CLOCK_FREQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/c_mso_monitor_nbits_itd_net_out" type="other">
+      <obj_property name="ElementShortName">c_mso_monitor_nbits_itd_net_out</obj_property>
+      <obj_property name="ObjectShortName">c_mso_monitor_nbits_itd_net_out</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider69">
+      <obj_property name="label">MSO_monitor</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/i_clock" type="logic">
+      <obj_property name="ElementShortName">i_clock</obj_property>
+      <obj_property name="ObjectShortName">i_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/i_reset" type="logic">
+      <obj_property name="ElementShortName">i_reset</obj_property>
+      <obj_property name="ObjectShortName">i_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/i_mso_output_spikes" type="array">
+      <obj_property name="ElementShortName">i_mso_output_spikes[127:0]</obj_property>
+      <obj_property name="ObjectShortName">i_mso_output_spikes[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/o_out_aer_event" type="array">
+      <obj_property name="ElementShortName">o_out_aer_event[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_out_aer_event[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/o_out_aer_req" type="logic">
+      <obj_property name="ElementShortName">o_out_aer_req</obj_property>
+      <obj_property name="ObjectShortName">o_out_aer_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/i_out_aer_ack" type="logic">
+      <obj_property name="ElementShortName">i_out_aer_ack</obj_property>
+      <obj_property name="ObjectShortName">i_out_aer_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/mso_monitor_modules_output" type="array">
+      <obj_property name="ElementShortName">mso_monitor_modules_output[0:3][15:0]</obj_property>
+      <obj_property name="ObjectShortName">mso_monitor_modules_output[0:3][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/mso_monitor_modules_read_from_fifos" type="array">
+      <obj_property name="ElementShortName">mso_monitor_modules_read_from_fifos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mso_monitor_modules_read_from_fifos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/mso_monitor_modules_read_from_fifos_index" type="array">
+      <obj_property name="ElementShortName">mso_monitor_modules_read_from_fifos_index[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mso_monitor_modules_read_from_fifos_index[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/mso_monitor_modules_empty_fifo_flags" type="array">
+      <obj_property name="ElementShortName">mso_monitor_modules_empty_fifo_flags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mso_monitor_modules_empty_fifo_flags[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/mso_monitor_modules_full_fifo_flags" type="array">
+      <obj_property name="ElementShortName">mso_monitor_modules_full_fifo_flags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mso_monitor_modules_full_fifo_flags[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/inverted_mso_monitor_modules_empty_fifo_flags" type="array">
+      <obj_property name="ElementShortName">inverted_mso_monitor_modules_empty_fifo_flags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">inverted_mso_monitor_modules_empty_fifo_flags[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/arbiter_grant_read_from_fifo" type="array">
+      <obj_property name="ElementShortName">arbiter_grant_read_from_fifo[3:0]</obj_property>
+      <obj_property name="ObjectShortName">arbiter_grant_read_from_fifo[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_fifo_wr_en" type="logic">
+      <obj_property name="ElementShortName">aer_out_fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">aer_out_fifo_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_fifo_full" type="logic">
+      <obj_property name="ElementShortName">aer_out_fifo_full</obj_property>
+      <obj_property name="ObjectShortName">aer_out_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_fifo_rd_en" type="logic">
+      <obj_property name="ElementShortName">aer_out_fifo_rd_en</obj_property>
+      <obj_property name="ObjectShortName">aer_out_fifo_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_fifo_empty" type="logic">
+      <obj_property name="ElementShortName">aer_out_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">aer_out_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_fifo_data_to_write" type="array">
+      <obj_property name="ElementShortName">aer_out_fifo_data_to_write[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aer_out_fifo_data_to_write[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_fifo_data_to_read" type="array">
+      <obj_property name="ElementShortName">aer_out_fifo_data_to_read[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aer_out_fifo_data_to_read[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/encoder_new_out_event_available" type="logic">
+      <obj_property name="ElementShortName">encoder_new_out_event_available</obj_property>
+      <obj_property name="ObjectShortName">encoder_new_out_event_available</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_if_busy" type="logic">
+      <obj_property name="ElementShortName">aer_out_if_busy</obj_property>
+      <obj_property name="ObjectShortName">aer_out_if_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_if_busy_inverted" type="logic">
+      <obj_property name="ElementShortName">aer_out_if_busy_inverted</obj_property>
+      <obj_property name="ObjectShortName">aer_out_if_busy_inverted</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_if_new_aer_in" type="logic">
+      <obj_property name="ElementShortName">aer_out_if_new_aer_in</obj_property>
+      <obj_property name="ObjectShortName">aer_out_if_new_aer_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/aer_out_if_new_aer_in_latched" type="logic">
+      <obj_property name="ElementShortName">aer_out_if_new_aer_in_latched</obj_property>
+      <obj_property name="ObjectShortName">aer_out_if_new_aer_in_latched</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/START_FREQ_CHANNEL" type="other">
+      <obj_property name="ElementShortName">START_FREQ_CHANNEL</obj_property>
+      <obj_property name="ObjectShortName">START_FREQ_CHANNEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/END_FREQ_CHANNEL" type="other">
+      <obj_property name="ElementShortName">END_FREQ_CHANNEL</obj_property>
+      <obj_property name="ObjectShortName">END_FREQ_CHANNEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/NUM_FREQ_CHANNEL" type="other">
+      <obj_property name="ElementShortName">NUM_FREQ_CHANNEL</obj_property>
+      <obj_property name="ObjectShortName">NUM_FREQ_CHANNEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/NBITS_NUM_FREQ_CHANNEL" type="other">
+      <obj_property name="ElementShortName">NBITS_NUM_FREQ_CHANNEL</obj_property>
+      <obj_property name="ObjectShortName">NBITS_NUM_FREQ_CHANNEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/NUM_ITD_NEURONS" type="other">
+      <obj_property name="ElementShortName">NUM_ITD_NEURONS</obj_property>
+      <obj_property name="ObjectShortName">NUM_ITD_NEURONS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/NBITS_NUM_ITD_NEURONS" type="other">
+      <obj_property name="ElementShortName">NBITS_NUM_ITD_NEURONS</obj_property>
+      <obj_property name="ObjectShortName">NBITS_NUM_ITD_NEURONS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/NBITS_ITD_NET_OUT" type="other">
+      <obj_property name="ElementShortName">NBITS_ITD_NET_OUT</obj_property>
+      <obj_property name="ObjectShortName">NBITS_ITD_NET_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/SUBMODULES_FIFO_DEPTH" type="other">
+      <obj_property name="ElementShortName">SUBMODULES_FIFO_DEPTH</obj_property>
+      <obj_property name="ObjectShortName">SUBMODULES_FIFO_DEPTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/AER_OUT_FIFO_DEPTH" type="other">
+      <obj_property name="ElementShortName">AER_OUT_FIFO_DEPTH</obj_property>
+      <obj_property name="ObjectShortName">AER_OUT_FIFO_DEPTH</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider103">
+      <obj_property name="label">mso_monitor_module_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/i_clock" type="logic">
+      <obj_property name="ElementShortName">i_clock</obj_property>
+      <obj_property name="ObjectShortName">i_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/i_reset" type="logic">
+      <obj_property name="ElementShortName">i_reset</obj_property>
+      <obj_property name="ObjectShortName">i_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/i_in_mso_spikes" type="array">
+      <obj_property name="ElementShortName">i_in_mso_spikes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_in_mso_spikes[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/i_read_aer_event" type="logic">
+      <obj_property name="ElementShortName">i_read_aer_event</obj_property>
+      <obj_property name="ObjectShortName">i_read_aer_event</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/o_out_aer_event" type="array">
+      <obj_property name="ElementShortName">o_out_aer_event[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_out_aer_event[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/o_no_aer_events" type="logic">
+      <obj_property name="ElementShortName">o_no_aer_events</obj_property>
+      <obj_property name="ObjectShortName">o_no_aer_events</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/o_full_aer_events" type="logic">
+      <obj_property name="ElementShortName">o_full_aer_events</obj_property>
+      <obj_property name="ObjectShortName">o_full_aer_events</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/ec_output_address" type="array">
+      <obj_property name="ElementShortName">ec_output_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ec_output_address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/ec_new_output_address" type="logic">
+      <obj_property name="ElementShortName">ec_new_output_address</obj_property>
+      <obj_property name="ObjectShortName">ec_new_output_address</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/em_aer_data" type="array">
+      <obj_property name="ElementShortName">em_aer_data[4:0]</obj_property>
+      <obj_property name="ObjectShortName">em_aer_data[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/ef_write_enable" type="logic">
+      <obj_property name="ElementShortName">ef_write_enable</obj_property>
+      <obj_property name="ObjectShortName">ef_write_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/ef_fifo_full" type="logic">
+      <obj_property name="ElementShortName">ef_fifo_full</obj_property>
+      <obj_property name="ObjectShortName">ef_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/ef_read_enable" type="logic">
+      <obj_property name="ElementShortName">ef_read_enable</obj_property>
+      <obj_property name="ObjectShortName">ef_read_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/ef_fifo_empty" type="logic">
+      <obj_property name="ElementShortName">ef_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">ef_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/NDETECTOR_NEURONS" type="other">
+      <obj_property name="ElementShortName">NDETECTOR_NEURONS</obj_property>
+      <obj_property name="ObjectShortName">NDETECTOR_NEURONS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/NBITS_NDETECTOR_NEURONS" type="other">
+      <obj_property name="ElementShortName">NBITS_NDETECTOR_NEURONS</obj_property>
+      <obj_property name="ObjectShortName">NBITS_NDETECTOR_NEURONS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/FIFO_DEPTH" type="other">
+      <obj_property name="ElementShortName">FIFO_DEPTH</obj_property>
+      <obj_property name="ObjectShortName">FIFO_DEPTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/CHANNEL_VAL" type="other">
+      <obj_property name="ElementShortName">CHANNEL_VAL</obj_property>
+      <obj_property name="ObjectShortName">CHANNEL_VAL</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider122">
+      <obj_property name="label">encoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_encoder/i_clock" type="logic">
+      <obj_property name="ElementShortName">i_clock</obj_property>
+      <obj_property name="ObjectShortName">i_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_encoder/i_reset" type="logic">
+      <obj_property name="ElementShortName">i_reset</obj_property>
+      <obj_property name="ObjectShortName">i_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_encoder/i_in_events" type="array">
+      <obj_property name="ElementShortName">i_in_events[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_in_events[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_encoder/o_out_address" type="array">
+      <obj_property name="ElementShortName">o_out_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">o_out_address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_encoder/o_new_out_address" type="logic">
+      <obj_property name="ElementShortName">o_new_out_address</obj_property>
+      <obj_property name="ObjectShortName">o_new_out_address</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_encoder/N_EVENTS" type="other">
+      <obj_property name="ElementShortName">N_EVENTS</obj_property>
+      <obj_property name="ObjectShortName">N_EVENTS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_encoder/NBITS_ADDRESS" type="other">
+      <obj_property name="ElementShortName">NBITS_ADDRESS</obj_property>
+      <obj_property name="ObjectShortName">NBITS_ADDRESS</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider130">
+      <obj_property name="label">fifo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/i_rst_sync" type="logic">
+      <obj_property name="ElementShortName">i_rst_sync</obj_property>
+      <obj_property name="ObjectShortName">i_rst_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/i_clk" type="logic">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/i_wr_en" type="logic">
+      <obj_property name="ElementShortName">i_wr_en</obj_property>
+      <obj_property name="ObjectShortName">i_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/i_wr_data" type="array">
+      <obj_property name="ElementShortName">i_wr_data[4:0]</obj_property>
+      <obj_property name="ObjectShortName">i_wr_data[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/o_full" type="logic">
+      <obj_property name="ElementShortName">o_full</obj_property>
+      <obj_property name="ObjectShortName">o_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/i_rd_en" type="logic">
+      <obj_property name="ElementShortName">i_rd_en</obj_property>
+      <obj_property name="ObjectShortName">i_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/o_rd_data" type="array">
+      <obj_property name="ElementShortName">o_rd_data[4:0]</obj_property>
+      <obj_property name="ObjectShortName">o_rd_data[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/o_empty" type="logic">
+      <obj_property name="ElementShortName">o_empty</obj_property>
+      <obj_property name="ObjectShortName">o_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/r_FIFO_DATA" type="array">
+      <obj_property name="ElementShortName">r_FIFO_DATA[0:31][4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_FIFO_DATA[0:31][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/r_WR_INDEX" type="other">
+      <obj_property name="ElementShortName">r_WR_INDEX</obj_property>
+      <obj_property name="ObjectShortName">r_WR_INDEX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/r_RD_INDEX" type="other">
+      <obj_property name="ElementShortName">r_RD_INDEX</obj_property>
+      <obj_property name="ObjectShortName">r_RD_INDEX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/r_FIFO_COUNT" type="other">
+      <obj_property name="ElementShortName">r_FIFO_COUNT</obj_property>
+      <obj_property name="ObjectShortName">r_FIFO_COUNT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/w_FULL" type="logic">
+      <obj_property name="ElementShortName">w_FULL</obj_property>
+      <obj_property name="ObjectShortName">w_FULL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/w_EMPTY" type="logic">
+      <obj_property name="ElementShortName">w_EMPTY</obj_property>
+      <obj_property name="ObjectShortName">w_EMPTY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/g_WIDTH" type="other">
+      <obj_property name="ElementShortName">g_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">g_WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/MODULE_FIFO_REGS_NO_FLAGS_INST/g_DEPTH" type="other">
+      <obj_property name="ElementShortName">g_DEPTH</obj_property>
+      <obj_property name="ObjectShortName">g_DEPTH</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider147">
+      <obj_property name="label">mask</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/i_input_address" type="array">
+      <obj_property name="ElementShortName">i_input_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">i_input_address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/o_output_masked_aer" type="array">
+      <obj_property name="ElementShortName">o_output_masked_aer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_output_masked_aer[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/NEURON_ID" type="array">
+      <obj_property name="ElementShortName">NEURON_ID[4:0]</obj_property>
+      <obj_property name="ObjectShortName">NEURON_ID[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/masked_aer" type="array">
+      <obj_property name="ElementShortName">masked_aer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">masked_aer[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/NBITS_ADDRESS" type="other">
+      <obj_property name="ElementShortName">NBITS_ADDRESS</obj_property>
+      <obj_property name="ObjectShortName">NBITS_ADDRESS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/CHANNEL_VAL" type="other">
+      <obj_property name="ElementShortName">CHANNEL_VAL</obj_property>
+      <obj_property name="ObjectShortName">CHANNEL_VAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/POL" type="logic">
+      <obj_property name="ElementShortName">POL</obj_property>
+      <obj_property name="ObjectShortName">POL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/CHANNEL" type="array">
+      <obj_property name="ElementShortName">CHANNEL[6:0]</obj_property>
+      <obj_property name="ObjectShortName">CHANNEL[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/LR" type="logic">
+      <obj_property name="ElementShortName">LR</obj_property>
+      <obj_property name="ObjectShortName">LR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/xSO_TYPE" type="logic">
+      <obj_property name="ElementShortName">xSO_TYPE</obj_property>
+      <obj_property name="ObjectShortName">xSO_TYPE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/SSSL" type="logic">
+      <obj_property name="ElementShortName">SSSL</obj_property>
+      <obj_property name="ObjectShortName">SSSL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_SOC/U_MSO_monitor/\GEN_MSO_MONITOR_MODULES(0)\/U_MSO_MONITOR_MODULE/U_mask/filler" type="array">
+      <obj_property name="ElementShortName">filler[4:0]</obj_property>
+      <obj_property name="ObjectShortName">filler[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider167">
+      <obj_property name="label">merger</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/i_clock" type="logic">
+      <obj_property name="ElementShortName">i_clock</obj_property>
+      <obj_property name="ObjectShortName">i_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/i_nreset" type="logic">
+      <obj_property name="ElementShortName">i_nreset</obj_property>
+      <obj_property name="ObjectShortName">i_nreset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/i_nas_aer_out_data" type="array">
+      <obj_property name="ElementShortName">i_nas_aer_out_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_nas_aer_out_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/i_nas_aer_out_req" type="logic">
+      <obj_property name="ElementShortName">i_nas_aer_out_req</obj_property>
+      <obj_property name="ObjectShortName">i_nas_aer_out_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/o_nas_aer_out_ack" type="logic">
+      <obj_property name="ElementShortName">o_nas_aer_out_ack</obj_property>
+      <obj_property name="ObjectShortName">o_nas_aer_out_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/i_soc_aer_out_data" type="array">
+      <obj_property name="ElementShortName">i_soc_aer_out_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_soc_aer_out_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/i_soc_aer_out_req" type="logic">
+      <obj_property name="ElementShortName">i_soc_aer_out_req</obj_property>
+      <obj_property name="ObjectShortName">i_soc_aer_out_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/o_soc_aer_out_ack" type="logic">
+      <obj_property name="ElementShortName">o_soc_aer_out_ack</obj_property>
+      <obj_property name="ObjectShortName">o_soc_aer_out_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/o_aer_out_data" type="array">
+      <obj_property name="ElementShortName">o_aer_out_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_aer_out_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/o_aer_out_req" type="logic">
+      <obj_property name="ElementShortName">o_aer_out_req</obj_property>
+      <obj_property name="ObjectShortName">o_aer_out_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/i_aer_out_ack" type="logic">
+      <obj_property name="ElementShortName">i_aer_out_ack</obj_property>
+      <obj_property name="ObjectShortName">i_aer_out_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/fsm_current_state" type="other">
+      <obj_property name="ElementShortName">fsm_current_state</obj_property>
+      <obj_property name="ObjectShortName">fsm_current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/fsm_next_state" type="other">
+      <obj_property name="ElementShortName">fsm_next_state</obj_property>
+      <obj_property name="ObjectShortName">fsm_next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/aer_bus_mux_sel" type="array">
+      <obj_property name="ElementShortName">aer_bus_mux_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">aer_bus_mux_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/aer_bus_mux_sel_registered" type="array">
+      <obj_property name="ElementShortName">aer_bus_mux_sel_registered[1:0]</obj_property>
+      <obj_property name="ObjectShortName">aer_bus_mux_sel_registered[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/nas_aer_out_req" type="logic">
+      <obj_property name="ElementShortName">nas_aer_out_req</obj_property>
+      <obj_property name="ObjectShortName">nas_aer_out_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/nas_aer_out_ack" type="logic">
+      <obj_property name="ElementShortName">nas_aer_out_ack</obj_property>
+      <obj_property name="ObjectShortName">nas_aer_out_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/soc_aer_out_req" type="logic">
+      <obj_property name="ElementShortName">soc_aer_out_req</obj_property>
+      <obj_property name="ObjectShortName">soc_aer_out_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/soc_aer_out_ack" type="logic">
+      <obj_property name="ElementShortName">soc_aer_out_ack</obj_property>
+      <obj_property name="ObjectShortName">soc_aer_out_ack</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider187">
+      <obj_property name="label">mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/i_input_sel" type="array">
+      <obj_property name="ElementShortName">i_input_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">i_input_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/i_aer_data_nas" type="array">
+      <obj_property name="ElementShortName">i_aer_data_nas[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_aer_data_nas[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/i_aer_req_nas" type="logic">
+      <obj_property name="ElementShortName">i_aer_req_nas</obj_property>
+      <obj_property name="ObjectShortName">i_aer_req_nas</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/o_aer_ack_nas" type="logic">
+      <obj_property name="ElementShortName">o_aer_ack_nas</obj_property>
+      <obj_property name="ObjectShortName">o_aer_ack_nas</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/i_aer_data_mso" type="array">
+      <obj_property name="ElementShortName">i_aer_data_mso[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_aer_data_mso[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/i_aer_req_mso" type="logic">
+      <obj_property name="ElementShortName">i_aer_req_mso</obj_property>
+      <obj_property name="ObjectShortName">i_aer_req_mso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/o_aer_ack_mso" type="logic">
+      <obj_property name="ElementShortName">o_aer_ack_mso</obj_property>
+      <obj_property name="ObjectShortName">o_aer_ack_mso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/o_aer_data_out" type="array">
+      <obj_property name="ElementShortName">o_aer_data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_aer_data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/o_aer_req_out" type="logic">
+      <obj_property name="ElementShortName">o_aer_req_out</obj_property>
+      <obj_property name="ObjectShortName">o_aer_req_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/i_aer_ack_out" type="logic">
+      <obj_property name="ElementShortName">i_aer_ack_out</obj_property>
+      <obj_property name="ObjectShortName">i_aer_ack_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NAS_SOC_top_tb/uut/U_NAS_SOC_AER_out_merger/U_AER_bus_mux/sel" type="logic">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+</wave_config>
