@@ -507,3 +507,4 @@ nssoc/Examples/NAS_SSOC/NAS_I2S_64ch_mono_12att_monitor_ztex/project/nas_soc/nas
 nssoc/Examples/NAS_SSOC/NAS_I2S_64ch_mono_12att_monitor_ztex/project/nas_soc/nas_soc.runs/impl_1/NAS_SOC_top.tcl
 nssoc/Examples/NAS_SSOC/NAS_I2S_64ch_mono_12att_monitor_ztex/project/nas_soc/nas_soc.ip_user_files/README.txt
 nssoc/Examples/NAS_SSOC/NAS_I2S_64ch_mono_12att_monitor_ztex/project/nas_soc/nas_soc.cache/wt/webtalk_pa.xml
+.vscode/settings.json
