@@ -1,0 +1,61 @@
+#///////////////////////////////////////////////////////////////////////////////
+#//                                                                           //
+#//    Copyright © 2016  Angel Francisco Jimenez-Fernandez                    //
+#//                                                                           //
+#//    This file is part of OpenNAS.                                          //
+#//                                                                           //
+#//    OpenNAS is free software: you can redistribute it and/or modify        //
+#//    it under the terms of the GNU General Public License as published by   //
+#//    the Free Software Foundation, either version 3 of the License, or      //
+#//    (at your option) any later version.                                    //
+#//                                                                           //
+#//    OpenNAS is distributed in the hope that it will be useful,             //
+#//    but WITHOUT ANY WARRANTY; without even the implied warranty of         //
+#//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the            //
+#//    GNU General Public License for more details.                           //
+#//                                                                           //
+#//    You should have received a copy of the GNU General Public License      //
+#//    along with OpenNAS. If not, see <http://www.gnu.org/licenses/>.        //
+#//                                                                           //
+#///////////////////////////////////////////////////////////////////////////////
+
+
+#*** External clock ***
+NET "i_sys_clock" LOC = "ab13";
+
+#*** External reset button ***
+NET "i_sys_reset" LOC = "A20";
+NET "i_sys_reset" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#*** GP_1 connector: audio input source ***
+#*2:VDD | 4:SDOUT          | 6:SCLK          | 8:LRCK           | 10:SRC_SEL   *
+#*      |                  |                 |                  |              *
+#*1:GND | 3:PDM_DAT_LEFT   | 5:PDM_CLK_LEFT  | 7:PDM_CLK_RIGTH  | 9:PDM_DATA_R *
+
+#*** I2S interface ***
+NET "i_I2S_sck" LOC = "C19";
+NET "i_I2S_sd" LOC = "F17";
+NET "i_I2S_ws" LOC = "B20";
+
+#*** AER out bus & protocol handshake ***
+NET "o_AER_data<0>" LOC = "M2"; 
+NET "o_AER_data<1>" LOC = "K1"; 
+NET "o_AER_data<2>" LOC = "J1"; 
+NET "o_AER_data<3>" LOC = "H2"; 
+NET "o_AER_data<4>" LOC = "F1"; 
+NET "o_AER_data<5>" LOC = "E1"; 
+NET "o_AER_data<6>" LOC = "D2"; 
+NET "o_AER_data<7>" LOC = "B1"; 
+NET "o_AER_data<8>" LOC = "C1"; 
+NET "o_AER_data<9>" LOC = "D1"; 
+NET "o_AER_data<10>" LOC = "F2"; 
+NET "o_AER_data<11>" LOC = "G1"; 
+NET "o_AER_data<12>" LOC = "H1"; 
+NET "o_AER_data<13>" LOC = "K2"; 
+NET "o_AER_data<14>" LOC = "L1"; 
+NET "o_AER_data<15>" LOC = "M1"; 
+
+NET "o_AER_req" LOC = "N3"; 
+NET "i_AER_ack" LOC = "U3"; 
+
+
