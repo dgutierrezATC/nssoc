@@ -49,8 +49,8 @@ settings = MainSettings(num_channels=nas_num_channels,
                         bin_size=nas_bin_size)
 
 # MSO parameters
-mso_start_freq_chnn = 33
-mso_end_freq_chnn = 36
+mso_start_freq_chnn = 25
+mso_end_freq_chnn = 34
 mso_num_neurons_per_chnn = 16
 
 ###############################################################
