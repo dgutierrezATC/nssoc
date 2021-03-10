@@ -530,3 +530,6 @@ nssoc/Examples/NAS_SSOC/NAS_I2S_64ch_mono_12att_monitor_ztex/project/nas_soc/nas
 nssoc/Examples/NAS_SSOC/NAS_I2S_64ch_mono_12att_monitor_ztex/project/nas_soc/nas_soc.runs/.jobs/vrs_config_14.xml
 nssoc/Testbench/Project/wlft0m0brc
 nssoc/Testbench/Project/wlft7jmmrx
+nssoc/Examples/NAS_SSOC/NAS_I2S_64ch_mono_12att_monitor_ztex/project/nas_soc/nas_soc.runs/.jobs/vrs_config_28.xml
+nssoc/Examples/NAS_SSOC/NAS_I2S_64ch_mono_12att_monitor_ztex/project/nas_soc/nas_soc.runs/.jobs/vrs_config_29.xml
+nssoc/Examples/NAS_SSOC/NAS_I2S_64ch_mono_12att_monitor_ztex/project/nas_soc/nas_soc.runs/.jobs/vrs_config_30.xml
