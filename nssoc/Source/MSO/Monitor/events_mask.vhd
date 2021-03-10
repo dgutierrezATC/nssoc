@@ -99,28 +99,45 @@ ARCHITECTURE Behavioral OF events_mask IS
         -----------------------------------------------------------------------------
         -- Processes
         -----------------------------------------------------------------------------
-        gen_masked_aer_case_1: if NBITS_ADDRESS < 5 GENERATE
-            -- purpose: Apply a mask to the input data
-            -- type   : combinational
-            -- inputs : i_input_address
-            -- outputs: masked_aer
-            mask_process : PROCESS (i_input_address)
-                VARIABLE v_lendif : INTEGER := 5 - NBITS_ADDRESS;
-            BEGIN
-                masked_aer <= SSSL & xSO_TYPE & filler((v_lendif-1) DOWNTO 0) & i_input_address & LR & CHANNEL & POL;
-            END PROCESS mask_process;
-        END GENERATE gen_masked_aer_case_1;
+--        gen_masked_aer_case_1: if NBITS_ADDRESS < 5 GENERATE
+--            -- purpose: Apply a mask to the input data
+--            -- type   : combinational
+--            -- inputs : i_input_address
+--            -- outputs: masked_aer
+--            mask_process : PROCESS (i_input_address)
+--                VARIABLE v_lendif : INTEGER := 5 - NBITS_ADDRESS;
+--            BEGIN
+--                masked_aer <= SSSL & xSO_TYPE & filler((v_lendif-1) DOWNTO 0) & i_input_address & LR & CHANNEL & POL;
+--            END PROCESS mask_process;
+--        END GENERATE gen_masked_aer_case_1;
         
-        gen_masked_aer_case_2: if NBITS_ADDRESS = 5 GENERATE
-            -- purpose: Apply a mask to the input data
-            -- type   : combinational
-            -- inputs : i_input_address
-            -- outputs: masked_aer
-            mask_process : PROCESS (i_input_address)
-            BEGIN
-                masked_aer <= SSSL & xSO_TYPE & i_input_address & LR & CHANNEL & POL;
-            END PROCESS mask_process;
-        END GENERATE gen_masked_aer_case_2;
+--        gen_masked_aer_case_2: if NBITS_ADDRESS = 5 GENERATE
+--            -- purpose: Apply a mask to the input data
+--            -- type   : combinational
+--            -- inputs : i_input_address
+--            -- outputs: masked_aer
+--            mask_process : PROCESS (i_input_address)
+--            BEGIN
+--                masked_aer <= SSSL & xSO_TYPE & i_input_address & LR & CHANNEL & POL;
+--            END PROCESS mask_process;
+--        END GENERATE gen_masked_aer_case_2;
+
+
+        -- purpose: Apply a mask to the input data
+        -- type   : combinational
+        -- inputs : i_input_address
+        -- outputs: masked_aer
+        mask_process : PROCESS (i_input_address)
+        BEGIN
+            --masked_aer <= SSSL & xSO_TYPE & "0" & i_input_address & LR & CHANNEL & POL;
+            masked_aer(15) <= SSSL;
+            masked_aer(14) <= xSO_TYPE;
+            masked_aer(13 downto 9) <= std_logic_vector(resize(unsigned(i_input_address), 5));
+            masked_aer(8) <= LR;
+            masked_aer(7 downto 1) <= CHANNEL;
+            masked_aer(0) <= POL;
+            --masked_aer <= SSSL & xSO_TYPE & i_input_address & LR & CHANNEL & POL;
+        END PROCESS mask_process;
 
         -----------------------------------------------------------------------------
         -- Output assign
