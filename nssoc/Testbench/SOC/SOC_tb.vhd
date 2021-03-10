@@ -111,14 +111,14 @@ ARCHITECTURE Behavioral OF SOC_tb IS
 
     -- Component constants
     CONSTANT c_NAS_NUM_FREQ_CH                : INTEGER := 64;
-    CONSTANT c_MSO_NUM_FREQ_CH                : INTEGER := 4;
-    CONSTANT c_MSO_NBITS_NUM_FREQ_CH          : INTEGER := 2;
-    CONSTANT c_MSO_START_FREQ_CH              : INTEGER := 33;
-    CONSTANT c_MSO_END_FREQ_CH                : INTEGER := 36;
+    CONSTANT c_MSO_NUM_FREQ_CH                : INTEGER := 10;
+    CONSTANT c_MSO_NBITS_NUM_FREQ_CH          : INTEGER := 4;
+    CONSTANT c_MSO_START_FREQ_CH              : INTEGER := 25;
+    CONSTANT c_MSO_END_FREQ_CH                : INTEGER := 34;
     CONSTANT c_MSO_NUM_ITD_NEURONS            : INTEGER := 16;
     CONSTANT c_MSO_NBITS_NUM_ITD_NEURONS      : INTEGER := 4;
     CONSTANT c_MSO_ITD_MAX_DETECTION_TIME     : INTEGER := 700;
-    CONSTANT c_MSO_ITD_DETECTION_TIME_OVERLAP : INTEGER := 10;
+    CONSTANT c_MSO_ITD_DETECTION_TIME_OVERLAP : INTEGER := 5;
     CONSTANT c_CLOCK_FREQ                     : INTEGER := 50000000;
 
     -- Component input ports
@@ -149,7 +149,7 @@ ARCHITECTURE Behavioral OF SOC_tb IS
 
     FILE tb_input_ts_stimuli_file   : TEXT OPEN READ_MODE  IS c_absolute_path & "pure_tone_fs48000duration1000frequency500amplitude1_3_tss.txt";  -- Input spikes filename
     FILE tb_input_addr_stimuli_file : TEXT OPEN READ_MODE  IS c_absolute_path & "pure_tone_fs48000duration1000frequency500amplitude1_3_addrs.txt";  -- Input spikes filename;
-    FILE tb_output_aer_events_file  : TEXT OPEN WRITE_MODE IS c_absolute_path & "pure_tone_fs48000duration1000frequency500amplitude1_3_soc_out3.txt";  -- Input spikes filename;
+    FILE tb_output_aer_events_file  : TEXT OPEN WRITE_MODE IS c_absolute_path & "pure_tone_fs48000duration1000frequency500amplitude1_3_soc_out.txt";  -- Input spikes filename;
 
 BEGIN
 
