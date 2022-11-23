@@ -128,7 +128,7 @@ for testbench_results_file_index in range(0, len(testbench_results_filenames)):
 fig = plt.figure(figsize=(4.6, 10.0))
 
 # Change the figure title
-fig.suptitle('ITD network testbench results')
+#fig.suptitle('ITD network testbench results')
 
 # Plotting the facilitatory and trigger spikes
 num_subplots = num_inputs + num_outputs
