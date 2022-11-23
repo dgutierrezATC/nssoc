@@ -268,7 +268,7 @@ BEGIN  -- architecture Behavioral
         -- Set the loop
         WHILE (v_delta_t >= 0) LOOP
             pr_event_burst_generator(c_i_clock_period, 5, 50000, v_delta_t, 0, i_left_ch_spike, i_right_ch_spike);
-            v_delta_t := v_delta_t - 250;
+            v_delta_t := v_delta_t - 1000;
         END LOOP;
 
         --
@@ -281,7 +281,7 @@ BEGIN  -- architecture Behavioral
         -- Set the loop
             WHILE (v_delta_t <= 35000) LOOP
             pr_event_burst_generator(c_i_clock_period, 5, 50000, v_delta_t, 1, i_left_ch_spike, i_right_ch_spike);
-            v_delta_t := v_delta_t + 250;
+            v_delta_t := v_delta_t + 1000;
         END LOOP;
 
         --

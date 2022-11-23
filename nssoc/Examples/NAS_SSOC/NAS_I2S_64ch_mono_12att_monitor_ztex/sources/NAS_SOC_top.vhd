@@ -77,14 +77,14 @@ ARCHITECTURE Behavioral OF NAS_SOC_top IS
     -- Constants declaration
     ---------------------------------------------------------------------------
     CONSTANT c_NAS_NUM_FREQ_CH                : INTEGER := 64;
-    CONSTANT c_MSO_START_FREQ_CH              : INTEGER := 33;
-    CONSTANT c_MSO_END_FREQ_CH                : INTEGER := 36;
-    CONSTANT c_MSO_NUM_FREQ_CH                : INTEGER := 4;
-    CONSTANT C_MSO_NBITS_NUM_FREQ_CH          : INTEGER := 2;
+    CONSTANT c_MSO_START_FREQ_CH              : INTEGER := 25;
+    CONSTANT c_MSO_END_FREQ_CH                : INTEGER := 34;
+    CONSTANT c_MSO_NUM_FREQ_CH                : INTEGER := 10;
+    CONSTANT C_MSO_NBITS_NUM_FREQ_CH          : INTEGER := 4;
     CONSTANT c_MSO_NUM_ITD_NEURONS            : INTEGER := 16;
     CONSTANT c_MSO_NBITS_NUM_ITD_NEURONS      : INTEGER := 4;
     CONSTANT c_MSO_ITD_MAX_DETECTION_TIME     : INTEGER := 700;
-    CONSTANT c_MSO_ITD_DETECTION_TIME_OVERLAP : INTEGER := 10;
+    CONSTANT c_MSO_ITD_DETECTION_TIME_OVERLAP : INTEGER := 5;
     CONSTANT c_CLOCK_FREQ                     : INTEGER := 48000000;
     
     ---------------------------------------------------------------------------

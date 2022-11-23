@@ -40,7 +40,7 @@ testbench_results_folder_path = testbench_results_analysis_folder_path.replace("
 print(testbench_results_folder_path)
 
 testbench_results_files_folder_path = testbench_results_analysis_folder_path.replace("Analysis", "Files\\")
-print(testbench_results_folder_path)
+print(testbench_results_files_folder_path)
 
 ###############################################################
 # Files to be processed
@@ -101,7 +101,7 @@ ax1.plot(input_neg_spikes_timestamps, np.zeros_like(input_neg_spikes_timestamps)
 
 ax1.set_ylabel('Input', labelpad = 10)
 ax1.set_ylim([-1, 2])
-y_labels = ['pos.', 'neg.']
+y_labels = ['neg.', 'pos.']
 y_pos = np.arange(len(y_labels))
 ax1.set_yticks(y_pos)
 ax1.set_yticklabels(y_labels)

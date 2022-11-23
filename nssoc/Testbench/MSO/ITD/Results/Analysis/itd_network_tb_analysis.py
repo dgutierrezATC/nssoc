@@ -106,7 +106,7 @@ for testbench_results_file_index in range(0, len(testbench_results_filenames)):
 fig = plt.figure(figsize=(4.6, 10.0))
 
 # Change the figure title
-fig.suptitle('ITD network testbench results')
+#fig.suptitle('ITD network testbench results')
 
 # Plotting the facilitatory and trigger spikes
 num_subplots = num_inputs + num_outputs
@@ -115,6 +115,7 @@ ax_input_list = []
 for index in range(0, num_inputs):
     if(index == 0):
         ax_input_list.append(fig.add_subplot(num_subplots, 1, index + 1))
+        ax_input_list[index].set_ylabel('Inputs', labelpad = 5)
     else:
         ax_input_list.append(fig.add_subplot(num_subplots, 1, index + 1, sharex=ax_input_list[0]))
     
@@ -122,9 +123,12 @@ for index in range(0, num_inputs):
     
     y_labels = [str(index)]
     y_pos = np.arange(len(y_labels))
-    ax_input_list[index].set_yticks(y_pos)
-    ax_input_list[index].set_yticklabels(y_labels)
+    #ax_input_list[index].set_yticks(y_pos)
+    ax_input_list[index].set_yticklabels(y_labels, visible=False)
     plt.setp(ax_input_list[index].get_xticklabels(), visible=False)
+
+ax_input_list[0].set_ylabel('left')
+ax_input_list[1].set_ylabel('right')
 
 ax_output_list = []
 for index in range(0, num_outputs):
@@ -135,10 +139,12 @@ for index in range(0, num_outputs):
     y_pos = np.arange(len(y_labels))
     ax_output_list[index].set_yticks(y_pos)
     ax_output_list[index].set_yticklabels(y_labels)
-    if(index < (num_subplots - 1)):
+    if(index < (num_subplots - 3)):
         plt.setp(ax_output_list[index].get_xticklabels(), visible=False)
     else:
         plt.setp(ax_output_list[index].get_xticklabels(), visible=True)
+
+ax_output_list[7].set_ylabel('Outputs', labelpad = 5)
 
 plt.xlabel(r'Time ($\mu$s)')
 #plt.tight_layout()

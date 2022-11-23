@@ -17,11 +17,11 @@ startup
 
 current_path = pwd;
 
-folder_name = strcat(current_path,'\dataset\audio');
-dest_folder_name = strcat(current_path,'\dataset\events');
+folder_name = strcat(current_path,'\dataset\audio\Pure_tones_dataset\Dist_50cm');
+dest_folder_name = strcat(current_path,'\dataset\events\Pure_tones_dataset\Dist_50cm\Config3');
 
 classes_folders = dir(folder_name);
-classes_folders = classes_folders(3:3);     %change in case of different dataset
+classes_folders = classes_folders(3:12);     %change in case of different dataset
 
 usb0.setOperationMode(1);
 usb0.setEventAcquisitionEnabled(true);
@@ -36,7 +36,7 @@ for i = 1 : length(classes_folders)
     files_in_class = dir(strcat(folder_name, '\', classes_folders(i).name));
     %files_in_class = files_in_class(3:length(files_in_class));
     
-    for j = 3 : size(files_in_class, 1)        
+    for j = 4 : size(files_in_class, 1)
         [y,Fs] = audioread(strcat(strcat(strcat(folder_name,'\',classes_folders(i).name),'\'), files_in_class(j).name));
         playAndRecord(y, Fs, strrep(strcat(strcat(dest_folder_name, '\', save_folder_name, '\', files_in_class(j).name)), '.wav',''), usb0);
         %pause(0.25);

@@ -171,7 +171,7 @@ orientation_righ_mic = [-(math.pi)/2, 0]
 # Source position [x y z] (m) MODIFY HERE
 s = [2, 6, 2]
 # Distance to the microphones (m)
-dist = 1.5
+dist = 3.0
 # Number of sound sources
 n_sounds = 9
 # Generate sound source positions
@@ -189,7 +189,7 @@ n = 4096
 # Sound duration (s)
 sound_duration = 0.5
 # Frequency (Hz)
-sound_freq = 1000
+sound_freq = 2500
 # Generate time array
 t = np.arange(0, sound_duration, 1. / fs)
 # Generaty signal array
@@ -275,7 +275,7 @@ for j in range(0, n_sounds):
     for i in range(len(rec)):
         output_wav_filename = 'nssoc_puretone_' + str(sound_freq) + 'Hz_dist' + str(dist) + 'm_pos_' + str(j) + 'of' + str(n_sounds) + '.wav'
         f.write(output_wav_filename + "\n")
-        sf.write(os.path.join(file_absolute_path, output_wav_filename), np.array([all_s1[i], all_s2[i]]).T, fs)
+        #sf.write(os.path.join(file_absolute_path, output_wav_filename), np.array([all_s1[i], all_s2[i]]).T, fs)
 
 # Finally, close the file
 f.close()
