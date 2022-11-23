@@ -144,9 +144,9 @@ for entry in os.listdir(dataset_path):
 
                 # Save the figure
                 plt.tight_layout()
-                #plt.show()
-                figure_filename = filename.replace('.wav.aedat','.png')
-                plt.savefig(figure_filename)
+                plt.show()
+                #figure_filename = filename.replace('.wav.aedat','.png')
+                #plt.savefig(figure_filename)
 
 
 
