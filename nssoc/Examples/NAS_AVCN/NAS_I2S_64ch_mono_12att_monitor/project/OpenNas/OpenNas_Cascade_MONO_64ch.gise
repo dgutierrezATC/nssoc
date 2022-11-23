@@ -281,10 +281,11 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="OpenNas_Cascade_MONO_64ch.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="opennas_cascade_mono_64ch.bgn"/>
-      <outfile xil_pn:name="opennas_cascade_mono_64ch.bit"/>
       <outfile xil_pn:name="opennas_cascade_mono_64ch.drc"/>
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
